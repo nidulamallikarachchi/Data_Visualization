@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>TB Data vs Sales of Anti-Bacterial Drugs</title>
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="Visualization_3.css">
+    <link rel="icon" href="../images/Viz.png">
+</head>
+<body>
+
+<div class="menu">
+    <div class="menu-item" id="logo"><a href="../Index.html">VizScape</a></div>
+    <div class="menu-item"><a href="../Index.html">Home</a></div>
+    <div class="menu-item"><a href="../Visualization_1/Visualization_1.html">Visualization 1</a></div>
+    <div class="menu-item"><a href="../Visualization_2/Visualization_2.html">Visualization 2</a></div>
+    <div class="menu-item"><a href="../Visualization_3/Visualization_3.html">Visualization 3</a></div>
+</div>
+
+<div class="main-container">
+    <center><h1>Trends in Sales of Antibacterial Drugs for Tuberculosis Prevention in OECD Countries vs. Global Tuberculosis Infection Rates (2010-2021)</h1></center>
+    <br>
+    <h2>Description:</h2>
+    <p>This line chart visualizes the trends in sales of antibacterial drugs for tuberculosis prevention in OECD (Organization for Economic Co-operation and Development) countries juxtaposed against the global tuberculosis infection rates over the period from 2010 to 2021.</p>
+    <div class="container">
+        <div class="visualization">
+            <div id="chart"></div>
+            <div id="tooltip" class="tooltip"></div>
+        </div>
+        <div class="controls">
+            <label for="country-select">Select Country: </label>
+            <select id="country-select"></select>
+        </div>
+    </div>
+    <h2>What is a Line Chart?</h2>
+    <p>
+        A line chart is a type of graph used to display information as a series of data points called 'markers' connected by straight line segments.
+        It is one of the simplest forms of chart, commonly used to visualize a trend in data over intervals of time, showing how a variable changes at specific intervals.
+        Each axis of the chart represents different variables: the horizontal (x-axis) typically represents time or another independent variable, while the vertical (y-axis) represents the dependent variable you are measuring.
+    </p>
+    <h2>Why We Used a Line Chart for This Visualization?</h2>
+    <p>
+        We used a line chart for this visualization to effectively compare the trends in tuberculosis (TB) prevalence and antibacterial drug sales over time in OECD countries.
+        Line charts are particularly useful for this type of data because they clearly show the changes and trends in the data over the specified period (2010-2021).
+        This allows us to observe patterns, peaks, and troughs in TB infection rates and drug sales, making it easier to understand and analyze the relationship between these two variables over time.
+    </p>
+    <h2>Advantages of Using a Line Chart</h2>
+
+    <ul>
+        <li>
+            <strong>Clarity and Simplicity:</strong> Line charts are straightforward and easy to understand. They clearly show the relationship between two variables and how they change over time.
+        </li>
+        <li>
+            <strong>Trend Analysis:</strong> They are excellent for identifying trends, patterns, and correlations in data over a continuous period. This is especially useful in our case, where we want to see how TB infection rates and drug sales evolve over time.
+        </li>
+        <li>
+            <strong>Comparative Analysis:</strong> Line charts can display multiple data sets on the same chart, making it easy to compare different variables. In this visualization, we can compare TB infection rates against antibacterial drug sales simultaneously.
+        </li>
+        <li>
+            <strong>Data Point Emphasis:</strong> The individual data points are visible, allowing for a detailed analysis of each specific time interval. This helps in pinpointing exact times when significant changes occur.
+        </li>
+        <li>
+            <strong>Versatility:</strong> They can be used for a wide range of data, from scientific data to business metrics, making them a versatile tool for various types of analysis.
+        </li>
+    </ul>
+
+</div>
+
+<script src="Visualization_3.js"></script>
+</body>
+</html>

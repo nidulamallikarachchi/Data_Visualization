@@ -1,0 +1,237 @@
+/*-------------------------------------------For Menu--------------------------------------*/
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+h1,h2,h3 {
+    margin: 10px 0 0 20px;
+}
+
+/* Logo Styles */
+#logo {
+    font-size: xx-large;
+    font-weight: bold;
+    margin-right: auto; /* Pushes the logo to the right */
+}
+
+/* Menu Styles */
+.menu {
+    display: flex;
+    justify-content: flex-end;
+    background-color: #49909c;
+    padding: 10px;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+.menu-item {
+    padding: 10px 20px;
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+    border-radius: 10px;
+    transition: background-color 0.3s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.menu-item:hover {
+    background-color: #3e808f;
+}
+
+p{
+    margin: 20px;
+}
+
+/*-------------Smooth Transition-----------*/
+
+
+body {
+    font-family: 'Poppins', sans-serif;
+    opacity: 0;
+    animation: fadeIn 1s forwards;
+}
+
+.menu a {
+    text-decoration: none;
+    color: inherit;
+    transition: color 0.3s ease;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.fade-out {
+    animation: fadeOut 1s forwards;
+}
+
+@keyframes fadeOut {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+    }
+}
+
+/*.container{*/
+/*    margin: 120px 60px 60px 60px;*/
+/*}*/
+
+/*.container h1{*/
+/*    font-size: 4em;*/
+/*}*/
+
+/*.container p{*/
+/*    margin-bottom: 30px;*/
+/*    font-size: 1.2em;*/
+/*}*/
+
+.content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.content div{
+    margin: 10px;
+    height: 520px;
+    width: 270px;
+    background-color: #7A9E9F;
+    border-radius: 30px;
+    display: block;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.content .contact-card{
+    color: white;
+    transition: background-color 0.5s ease;
+}
+
+.content .contact-card:hover{
+    color: black;
+    background-color: #B8D8D8;
+    transition: background-color 0.5s ease;
+}
+
+.content div img{
+    margin: 20px;
+    position: relative;
+    height: 150px;
+    border-radius: 50%;
+}
+
+.contact-card a img{
+    height: 40px;
+}
+
+footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+#tutor-email a{
+    text-decoration: none;
+    color: black;
+    padding: 10px;
+    transition: 0.5s ease;
+    border-radius: 30px;
+    border: 1px solid black;
+}
+
+#tutor-email a:hover{
+    background-color: #cccccc;
+    transition: 0.5s ease;
+}
+
+iframe{
+    border-radius: 10px;
+}
+
+.video-embed{
+    margin-top: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+footer{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.arrows{
+    background-color: transparent;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 50%;
+    transition: 0.5s ease;
+}
+
+.arrows:hover{
+    background-color: #cccccc;
+    transition: 0.5s ease;
+}
+
+#tutor-email a{
+    text-decoration: none;
+    color: black;
+    padding: 10px;
+    transition: 0.5s ease;
+    border-radius: 30px;
+    border: 1px solid black;
+    font-style: italic;
+}
+
+#tutor-email a:hover{
+    background-color: #cccccc;
+    transition: 0.5s ease;
+}
+
+iframe{
+    border: 0;
+}
+
+.button-container {
+    text-align: center;
+}
+.modern-button {
+    background: #498F9BFF;
+    border: none;
+    border-radius: 25px;
+    color: white;
+    padding: 15px 30px;
+    font-size: 16px;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+.modern-button:hover {
+    background: #59adc4;
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
+    transform: translateY(-2px);
+}
+.modern-button:active {
+    transform: translateY(0);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}

@@ -1,0 +1,172 @@
+body {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background-color: #f4f4f4;
+}
+header, footer {
+    background-color: #343a40;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 1;
+    padding: 20px;
+    box-sizing: border-box;
+}
+.controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.dropdown {
+    margin: 0 10px;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+}
+.visualization {
+    position: relative;
+    width: 100%;
+    max-width: 1400px;
+    height: 700px;
+    background-color: white;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+.tooltip {
+    position: absolute;
+    text-align: center;
+    width: auto;
+    height: auto;
+    padding: 10px;
+    font: 14px 'Poppins', sans-serif;
+    background: rgba(255, 255, 255, 0.9);
+    border: 0;
+    border-radius: 8px;
+    pointer-events: none;
+    opacity: 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+.fullscreen-btn {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 4px;
+}
+.fullscreen-btn:hover {
+    background-color: #0056b3;
+}
+path {
+    fill: #ccc;
+    stroke: #333;
+    stroke-width: 0.5;
+}
+
+.highlight {
+    /*fill: #3b96ff !important;*/
+    stroke: white !important;
+    stroke-width: 2 !important;
+}
+
+
+
+
+/*-------------------------------------------For Menu--------------------------------------*/
+
+h1,h2,h3 {
+    margin: 10px 0 0 20px;
+}
+
+/* Logo Styles */
+#logo {
+    font-size: xx-large;
+    font-weight: bold;
+    margin-right: auto; /* Pushes the logo to the right */
+}
+
+/* Menu Styles */
+.menu {
+    display: flex;
+    justify-content: flex-end;
+    background-color: #49909c;
+    padding: 10px;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+.menu-item {
+    padding: 10px 20px;
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+    border-radius: 10px;
+    transition: background-color 0.3s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.menu-item:hover {
+    background-color: #3e808f;
+}
+
+p{
+    margin: 20px;
+}
+
+/*-------------Smooth Transition-----------*/
+
+
+body {
+    font-family: 'Poppins', sans-serif;
+    opacity: 0;
+    animation: fadeIn 1s forwards;
+}
+
+.menu a {
+    text-decoration: none;
+    color: inherit;
+    transition: color 0.3s ease;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.fade-out {
+    animation: fadeOut 1s forwards;
+}
+
+@keyframes fadeOut {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+    }
+}

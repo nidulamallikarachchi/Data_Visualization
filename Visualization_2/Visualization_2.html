@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Global Tuberculosis Incidence</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="Visualization_2.css">
+    <link rel="icon" href="../images/Viz.png">
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+</head>
+<body>
+<div class="menu">
+    <div class="menu-item" id="logo"><a href="../Index.html">VizScape</a></div>
+    <div class="menu-item"><a href="../Index.html">Home</a></div>
+    <div class="menu-item"><a href="../Visualization_1/Visualization_1.html">Visualization 1</a></div>
+    <div class="menu-item"><a href="../Visualization_2/Visualization_2.html">Visualization 2</a></div>
+    <div class="menu-item"><a href="../Visualization_3/Visualization_3.html">Visualization 3</a></div>
+</div>
+
+<div class="main-container">
+    <center><h1>Global Distribution of Tuberculosis Infections Per 100,000 Population (2000-2022)</h1></center>
+    <h2>Description:</h2>
+    <p>This choropleth map illustrates the global distribution of tuberculosis (TB) infections per 100,000 population from 2000 to 2022. Each country is color-coded to represent the prevalence of TB, with darker shades indicating higher infection rates. The interactive feature allows users to select different years from a dropdown menu, enabling a comparative view of how TB prevalence has changed over time across various regions.
+
+        By leveraging this visualization, users can gain insights into the geographic patterns and trends in TB infections, facilitating a better understanding of the global burden of this disease and the effectiveness of public health interventions over the past two decades.</p>
+    <div class="container">
+        <div class="controls">
+            <label for="year-select">Choose a Year:</label>
+            <select id="year-select" class="dropdown"></select>
+        </div>
+        <div class="visualization">
+            <svg width="1400" height="700"></svg>
+            <div class="tooltip"></div>
+        </div>
+    </div>
+    <div>
+
+    </div>
+
+    <h2>What is a choropleth?</h2>
+    <p>A choropleth map is a thematic map in which areas are shaded or patterned in proportion to the value of a variable being represented. It typically uses colors to represent different data values across geographic regions. The purpose is to visually communicate spatial patterns and variations in data, making it easier for viewers to understand distributions and trends.</p>
+
+    <h2>Why we used a Choropleth for this Visualization?</h2>
+    <p>A choropleth map is particularly suitable for visualizing data that varies across geographic regions, such as global tuberculosis infections. By using a choropleth map, we can effectively display the distribution of tuberculosis infections across different countries or regions over the years. This visualization method allows viewers to quickly grasp the magnitude and geographic patterns of the data, facilitating analysis and comparison.</p>
+
+    <h2>Advantages of Using a Choropleth:</h2>
+    <ol>
+        <li><strong>Spatial Representation:</strong> Choropleth maps provide a clear visual representation of spatial patterns and variations in data, making it easy to identify regions with higher or lower values.</li>
+        <li><strong>Comparative Analysis:</strong> By visually comparing the color shades or patterns across different regions, viewers can easily compare the magnitude of the variable being represented.</li>
+        <li><strong>Easy Interpretation:</strong> Choropleth maps are intuitive and easy to interpret, even for individuals who may not be familiar with the underlying data.</li>
+        <li><strong>Effective Communication:</strong> Choropleth maps effectively communicate complex spatial data, allowing viewers to quickly grasp trends and patterns without needing to analyze raw numerical data.</li>
+        <li><strong>Highlighting Disparities:</strong> They are useful for highlighting disparities or inequalities in data distribution across geographic regions, aiding policymakers and researchers in identifying areas that require attention or intervention.</li>
+    </ol>
+
+</div>
+
+<script src="Visualization_2.js"></script>
+</body>
+</html>

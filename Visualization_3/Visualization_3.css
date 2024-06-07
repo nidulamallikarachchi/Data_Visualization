@@ -1,0 +1,149 @@
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+.heading {
+    text-align: center;
+    font-size: 24px;
+    margin: 20px 0;
+    color: #555;
+}
+#chart {
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    margin: 0 auto;
+    padding: 20px;
+    width: 960px;
+    border-radius: 8px;
+}
+.tooltip {
+    position: absolute;
+    text-align: center;
+    padding: 8px;
+    font: 14px 'Poppins', sans-serif;
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    pointer-events: none;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+label {
+    display: inline-block;
+    text-align: center;
+    margin: 20px 0;
+    font-size: 16px;
+}
+select {
+    padding: 8px;
+    font-size: 16px;
+    border-radius: 4px;
+    border: 1px solid #ddd;
+}
+.axis-label {
+    font-size: 16px;
+    fill: #666;
+    font-family: 'Poppins', sans-serif;
+}
+.line {
+    fill: none;
+    stroke-width: 2px;
+}
+.highlight {
+    stroke-width: 4px;
+}
+
+.controls{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*-------------------------------------------For Menu--------------------------------------*/
+
+h1,h2,h3{
+    margin: 10px 0 0 20px;
+}
+
+/* Logo Styles */
+#logo {
+    font-size: xx-large;
+    font-weight: bold;
+    margin-right: auto; /* Pushes the logo to the right */
+}
+
+/* Menu Styles */
+.menu {
+    display: flex;
+    justify-content: flex-end;
+    background-color: #49909c;
+    padding: 10px;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+.menu-item {
+    padding: 10px 20px;
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+    border-radius: 10px;
+    transition: background-color 0.3s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.menu-item:hover {
+    background-color: #3e808f;
+}
+
+p{
+    margin: 20px;
+}
+
+/*-------------Smooth Transition-----------*/
+
+
+body {
+    font-family: 'Poppins', sans-serif;
+    opacity: 0;
+    animation: fadeIn 1s forwards;
+}
+
+.menu a {
+    text-decoration: none;
+    color: inherit;
+    transition: color 0.3s ease;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.fade-out {
+    animation: fadeOut 1s forwards;
+}
+
+@keyframes fadeOut {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+    }
+}

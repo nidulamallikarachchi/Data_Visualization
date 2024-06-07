@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Radar Chart with D3.js</title>
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="Visualization_1.css">
+    <link rel="icon" href="../images/Viz.png">
+</head>
+<body>
+
+<div class="menu">
+    <div class="menu-item" id="logo"><a href="../Index.html">VizScape</a></div>
+    <div class="menu-item"><a href="../Index.html">Home</a></div>
+    <div class="menu-item"><a href="../Visualization_1/Visualization_1.html">Visualization 1</a></div>
+    <div class="menu-item"><a href="../Visualization_2/Visualization_2.html">Visualization 2</a></div>
+    <div class="menu-item"><a href="../Visualization_3/Visualization_3.html">Visualization 3</a></div>
+</div>
+
+<div class="main-container">
+    <center><h1>Comparative Sales Analysis of Antibacterial Drugs for Tuberculosis Prevention in OECD Countries (2010-2021)</h1></center>
+    <br>
+    <h2>Description:</h2>
+    <p>This radar chart provides a comparative sales analysis of antibacterial drugs for tuberculosis prevention in OECD countries from 2010 to 2021. Each axis represents a year within this period, while the colored lines represent different countries. The chart allows for an easy comparison of sales trends and fluctuations over time across various nations.
+
+        Utilizing D3.js for its creation, this dynamic and interactive visualization enables users to select specific countries from the legend on the right to highlight their sales data, making it a valuable tool for understanding and analyzing the global efforts in tuberculosis prevention through antibacterial drug sales.</p>
+    <div class="container">
+        <div class="radar-chart-visualization">
+            <div id="selected-countries" class="selected-country"></div>
+            <div id="chart" class="radar-chart"></div>
+            <div id="tooltip" class="tooltip"></div>
+        </div>
+        <div class="radar-chart-country-list" id="country-list"></div>
+    </div>
+    <br><br><br><br><br>
+
+    <h2>What is a Radar Chart?</h2>
+    <p>A radar chart, also known as a spider chart or web chart, is a graphical method used to display multivariate data in the form of a two-dimensional chart of three or more quantitative variables represented on axes starting from the same point. Each variable has its own axis, and these axes are typically arranged radially like spokes around a central point. The data points for each variable are plotted on the respective axes and then connected to form a polygon. This makes it easy to compare the relative performance or values of multiple variables simultaneously.</p>
+
+    <h2>Why We Used a Radar Chart for This Visualization?</h2>
+    <p>In the context of visualizing the correlation between tuberculosis (TB) prevalence and sales of antibacterial drugs for TB prevention in OECD countries, the radar chart is particularly useful for several reasons:</p>
+    <div>
+        <ul>
+            <li><strong>Multidimensional Data Representation:</strong> Radar charts allow for the representation of multiple dimensions on a single chart, making it easy to compare several variables simultaneously. In this case, it can show the sales values of antibacterial drugs for TB prevention across different countries over multiple years.</li>
+            <li><strong>Pattern Recognition:</strong> The radar chart makes it easy to identify patterns and trends over multiple dimensions. For instance, one can quickly see which countries have higher or lower sales of TB prevention drugs and how these sales change over time.</li>
+            <li><strong>Comparative Analysis:</strong> It facilitates the comparison of various countries' performances in TB drug sales within the same chart. This comparative nature helps in identifying outliers and understanding relative performance.</li>
+            <li><strong>Visual Clarity:</strong> Despite handling complex and multidimensional data, a radar chart maintains clarity and simplicity, making it accessible for users to grasp the key insights without needing to parse through extensive data tables or multiple charts.</li>
+        </ul>
+    </div>
+
+    <h2>Advantages of Using Radar Chart</h2>
+    <div>
+        <ul>
+            <li><strong>Holistic View:</strong> Radar charts provide a comprehensive view of all variables on a single chart, allowing for a holistic analysis of the data set.</li>
+            <li><strong>Easy Comparison:</strong> They enable easy visual comparison of multiple variables for different groups or entities, making it straightforward to compare data points across several dimensions.</li>
+            <li><strong>Trend Identification:</strong> They are particularly good at highlighting trends and patterns, such as identifying which countries have higher or lower sales values and how these values change over time.</li>
+            <li><strong>Multidimensional Data Display:</strong> Radar charts can efficiently display complex, multidimensional data in an intuitive format, making it easier to interpret and analyze.</li>
+            <li><strong>Flexibility:</strong> They can be used in various fields and for different types of data, from performance metrics to survey results, making them a versatile tool for data visualization.</li>
+            <li><strong>Engagement:</strong> The unique, visually appealing shape of radar charts can engage viewers more effectively than traditional bar or line charts, potentially leading to better retention of the information presented.</li>
+        </ul>
+    </div>
+
+</div>
+
+<script src="Visualization_1.js"></script>
+</body>
+</html>
